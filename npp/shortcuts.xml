@@ -7,6 +7,8 @@
         <Shortcut id="49000" Ctrl="no" Alt="no" Shift="no" Key="0" />
         <Shortcut id="50000" Ctrl="no" Alt="yes" Shift="no" Key="32" />
         <Shortcut id="50001" Ctrl="yes" Alt="no" Shift="no" Key="32" />
+        <Shortcut id="42035" Ctrl="no" Alt="no" Shift="no" Key="0" />
+        <Shortcut id="42036" Ctrl="no" Alt="no" Shift="no" Key="0" />
     </InternalCommands>
     <Macros>
         <Macro name="Trim Trailing and save" Ctrl="no" Alt="yes" Shift="yes" Key="83">
@@ -20,7 +22,7 @@
     <UserDefinedCommands>
         <Command name="Google Search" Ctrl="no" Alt="yes" Shift="no" Key="113">http://www.google.com/search?q=$(CURRENT_WORD)</Command>
         <Command name="Open file" Ctrl="no" Alt="yes" Shift="no" Key="116">$(NPP_DIRECTORY)\notepad++.exe $(CURRENT_WORD)</Command>
-        <Command name="Open in another instance" Ctrl="no" Alt="yes" Shift="no" Key="117">$(NPP_DIRECTORY)\notepad++.exe -nosession -multiInst "$(FULL_CURRENT_PATH)"</Command>
+        <Command name="Open in another instance" Ctrl="no" Alt="yes" Shift="no" Key="117">$(NPP_DIRECTORY)\notepad++.exe -nosession -multiInst &quot;$(FULL_CURRENT_PATH)&quot;</Command>
         <Command name="Open containing folder" Ctrl="yes" Alt="no" Shift="no" Key="69">explorer $(CURRENT_DIRECTORY)</Command>
         <Command name="Open current dir cmd" Ctrl="no" Alt="no" Shift="no" Key="0">cmd /K cd/d $(CURRENT_DIRECTORY)</Command>
         <Command name="npp dir" Ctrl="no" Alt="no" Shift="no" Key="0">&quot;$(NPP_DIRECTORY)&quot;</Command>

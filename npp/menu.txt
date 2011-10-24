@@ -1,0 +1,571 @@
+1500 MENU
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+{
+POPUP "&File"
+{
+	MENUITEM "&New",  41001
+	MENUITEM "&Open...",  41002
+	MENUITEM "Re&load from Disk",  41014
+	MENUITEM "&Save",  41006
+	MENUITEM "Save &As...",  41008
+	MENUITEM "Save a Copy As...",  41015
+	MENUITEM "Sav&e All",  41007
+	MENUITEM "Rename...",  41017
+	MENUITEM "&Close",  41003
+	MENUITEM "Clos&e All",  41004
+	MENUITEM "Close All but Active Document",  41005
+	MENUITEM "Delete from Disk",  41016
+	MENUITEM SEPARATOR
+	MENUITEM "Load Session...",  41012
+	MENUITEM "Save Session...",  41013
+	MENUITEM SEPARATOR
+	MENUITEM "Print...",  41010
+	MENUITEM "Print Now",  1001
+	MENUITEM SEPARATOR
+	MENUITEM "E&xit",  41011
+}
+POPUP "&Edit"
+{
+	MENUITEM "Trim Trailing Space",  42024
+	MENUITEM "TAB to Space",  42046
+	MENUITEM SEPARATOR
+	MENUITEM "&UPPERCASE",  42016
+	MENUITEM "&lowercase",  42017
+	MENUITEM SEPARATOR
+	POPUP "Encoding"
+	{
+		MENUITEM "Encode in ANSI",  45004
+		MENUITEM "Encode in UTF-8 without BOM",  45008
+		MENUITEM "Encode in UTF-8",  45005
+		MENUITEM "Encode in UCS-2 Big Endian",  45006
+		MENUITEM "Encode in UCS-2 Little Endian",  45007
+		POPUP "Character sets"
+		{
+			POPUP "Arabic"
+			{
+				MENUITEM "ISO 8859-6",  45034
+				MENUITEM "OEM 720",  45045
+				MENUITEM "Windows-1256",  45026
+			}
+			POPUP "Baltic"
+			{
+				MENUITEM "ISO 8859-4",  45032
+				MENUITEM "ISO 8859-13",  45040
+				MENUITEM "OEM 775",  45047
+				MENUITEM "Windows-1257",  45027
+			}
+			POPUP "Celtic"
+			{
+				MENUITEM "ISO 8859-14",  45041
+			}
+			POPUP "Cyrillic"
+			{
+				MENUITEM "ISO 8859-5",  45033
+				MENUITEM "KOI8-R",  45068
+				MENUITEM "KOI8-U",  45067
+				MENUITEM "Macintosh",  45066
+				MENUITEM "OEM 855",  45050
+				MENUITEM "OEM 866",  45058
+				MENUITEM "Windows-1251",  45021
+			}
+			POPUP "Central European"
+			{
+				MENUITEM "OEM 852",  45049
+				MENUITEM "Windows-1250",  45020
+			}
+			POPUP "Chinese"
+			{
+				MENUITEM "Big5 (Traditional)",  45060
+				MENUITEM "GB2312 (Simplified)",  45061
+			}
+			POPUP "Eastern European"
+			{
+				MENUITEM "ISO 8859-2",  45030
+			}
+			POPUP "Greek"
+			{
+				MENUITEM "ISO 8859-7",  45035
+				MENUITEM "OEM 737",  45046
+				MENUITEM "OEM 869",  45059
+				MENUITEM "Windows-1253",  45023
+			}
+			POPUP "Hebrew"
+			{
+				MENUITEM "ISO 8859-8",  45036
+				MENUITEM "OEM 862",  45055
+				MENUITEM "Windows-1255",  45025
+			}
+			POPUP "Japanese"
+			{
+				MENUITEM "Shift-JIS",  45062
+			}
+			POPUP "Korean"
+			{
+				MENUITEM "Windows 949",  45063
+				MENUITEM "EUC-KR",  45064
+			}
+			POPUP "North European"
+			{
+				MENUITEM "OEM 861 : Icelandic",  45054
+				MENUITEM "OEM 865 : Nordic",  45057
+			}
+			POPUP "Thai"
+			{
+				MENUITEM "TIS-620",  45065
+			}
+			POPUP "Turkish"
+			{
+				MENUITEM "ISO 8859-3",  45031
+				MENUITEM "ISO 8859-9",  45037
+				MENUITEM "OEM 857",  45051
+				MENUITEM "Windows-1254",  45024
+			}
+			POPUP "Western European"
+			{
+				MENUITEM "ISO 8859-1",  45029
+				MENUITEM "ISO 8859-15",  45042
+				MENUITEM "OEM 850",  45048
+				MENUITEM "OEM 858",  45052
+				MENUITEM "OEM 860 : Portuguese",  45053
+				MENUITEM "OEM 863 : French",  45056
+				MENUITEM "OEM-US",  45044
+				MENUITEM "Windows-1252",  45022
+			}
+			POPUP "Vietnamese"
+			{
+				MENUITEM "Windows-1258",  45028
+			}
+		}
+		MENUITEM SEPARATOR
+		MENUITEM "Convert to ANSI",  45009
+		MENUITEM "Convert to UTF-8 without BOM",  45010
+		MENUITEM "Convert to UTF-8",  45011
+		MENUITEM "Convert to UCS-2 Big Endian",  45012
+		MENUITEM "Convert to UCS-2 Little Endian",  45013
+	}
+	POPUP "EOL Conversion"
+	{
+		MENUITEM "Windows Format",  45001
+		MENUITEM "UNIX Format",  45002
+		MENUITEM "Mac Format",  45003
+	}
+	MENUITEM SEPARATOR
+	POPUP "stuff"
+	{
+		POPUP "Copy to Clipboard"
+		{
+			MENUITEM "Current Full File path to Clipboard",  42029
+			MENUITEM "Current Filename to Clipboard",  42030
+			MENUITEM "Current Dir. Path to Clipboard",  42031
+		}
+		MENUITEM "Column Mode...",  42037
+		MENUITEM "&Undo",  42003
+		MENUITEM "&Redo",  42004
+		MENUITEM SEPARATOR
+		MENUITEM "Cu&t",  42001
+		MENUITEM "&Copy",  42002
+		MENUITEM "&Paste",  42005
+		MENUITEM "&Delete",  42006
+		MENUITEM "Select A&ll",  42007
+		MENUITEM SEPARATOR
+		MENUITEM "Current Full File path to Clipboard",  42029
+		MENUITEM "Current Filename to Clipboard",  42030
+		MENUITEM "Current Dir. Path to Clipboard",  42031
+		MENUITEM SEPARATOR
+		MENUITEM "Increase Line Indent",  42008
+		MENUITEM "Decrease Line Indent",  42009
+		POPUP "Line Operations"
+		{
+			MENUITEM "Duplicate Current Line",  42010
+			MENUITEM "Split Lines",  42012
+			MENUITEM "Join Lines",  42013
+			MENUITEM "Move Up Current Line",  42014
+			MENUITEM "Move Down Current Line",  42015
+		}
+		POPUP "Comment/Uncomment"
+		{
+			MENUITEM "Toggle Block Comment",  42022
+			MENUITEM "Block Comment",  42035
+			MENUITEM "Block Uncomment",  42036
+			MENUITEM "Stream Comment",  42023
+		}
+		POPUP "Auto-Completion"
+		{
+			MENUITEM "Function Completion",  50000
+			MENUITEM "Word Completion",  50001
+			MENUITEM "Function Parameters Hint",  50002
+		}
+		POPUP "Blank Operations"
+		{
+			MENUITEM "Trim Trailing Space",  42024
+			MENUITEM "Trim Leading Space",  42042
+			MENUITEM "Trim Leading and Trailing Space",  42043
+			MENUITEM "EOL to Space",  42044
+			MENUITEM "Remove Unnecessary Blank and EOL",  42045
+			MENUITEM SEPARATOR
+			MENUITEM "TAB to Space",  42046
+			MENUITEM "Space to TAB",  42047
+		}
+		MENUITEM SEPARATOR
+		MENUITEM "Set Read-Only",  42028
+		MENUITEM "Clear Read-Only Flag",  42033
+	}
+	POPUP "Paste Special"
+	{
+		MENUITEM "Paste HTML Content",  42038
+		MENUITEM "Paste RTF Content",  42039
+		MENUITEM SEPARATOR
+		MENUITEM "Copy Binary Content",  42048
+		MENUITEM "Cut Binary Content",  42049
+		MENUITEM "Paste Binary Content",  42050
+	}
+	MENUITEM SEPARATOR
+	MENUITEM "Column Editor...",  42034
+	MENUITEM "Character Panel",  42051
+	MENUITEM "Clipboard History",  42052
+}
+POPUP "&Search"
+{
+	MENUITEM "&Find...",  43001
+	MENUITEM "Find in Files...",  43013
+	MENUITEM "Find &Next",  43002
+	MENUITEM "Find &Previous",  43010
+	MENUITEM "Select and Find Next",  43048
+	MENUITEM "Select and Find Previous",  43049
+	MENUITEM "Find (Volatile) Next",  43014
+	MENUITEM "Find (Volatile) Previous",  43015
+	MENUITEM "&Replace...",  43003
+	MENUITEM "&Incremental Search",  43011
+	MENUITEM "Search Results Window",  43045
+	MENUITEM "Next Search Result",  43046
+	MENUITEM "Previous Search Result",  43047
+	MENUITEM "&Go to...",  43004
+	MENUITEM "Go to Matching Brace",  43009
+	MENUITEM SEPARATOR
+	POPUP "Mark All"
+	{
+		MENUITEM "Using 1st Style",  43022
+		MENUITEM "Using 2nd Style",  43024
+		MENUITEM "Using 3rd Style",  43026
+		MENUITEM "Using 4th Style",  43028
+		MENUITEM "Using 5th Style",  43030
+	}
+	POPUP "Unmark All"
+	{
+		MENUITEM "Clear 1st Style",  43023
+		MENUITEM "Clear 2nd Style",  43025
+		MENUITEM "Clear 3rd Style",  43027
+		MENUITEM "Clear 4th Style",  43029
+		MENUITEM "Clear 5th Style",  43031
+		MENUITEM "Clear all Styles",  43032
+	}
+	POPUP "Jump up"
+	{
+		MENUITEM "1st Style",  43033
+		MENUITEM "2nd Style",  43034
+		MENUITEM "3rd Style",  43035
+		MENUITEM "4th Style",  43036
+		MENUITEM "5th Style",  43037
+		MENUITEM "Find Style",  43038
+	}
+	POPUP "Jump down"
+	{
+		MENUITEM "1st Style",  43039
+		MENUITEM "2nd Style",  43040
+		MENUITEM "3rd Style",  43041
+		MENUITEM "4th Style",  43042
+		MENUITEM "5th Style",  43043
+		MENUITEM "Find Style",  43044
+	}
+	MENUITEM SEPARATOR
+	POPUP "Bookmark"
+	{
+		MENUITEM "Toggle Bookmark",  43005
+		MENUITEM "Next Bookmark",  43006
+		MENUITEM "Previous Bookmark",  43007
+		MENUITEM "Clear All Bookmarks",  43008
+		MENUITEM "Cut Bookmarked Lines",  43018
+		MENUITEM "Copy Bookmarked Lines",  43019
+		MENUITEM "Paste to (Replace) Bookmarked Lines",  43020
+		MENUITEM "Remove Bookmarked Lines",  43021
+		MENUITEM "Remove Unmarked Lines",  43051
+		MENUITEM "Inverse Bookmark",  43050
+	}
+	MENUITEM SEPARATOR
+	MENUITEM "Find characters in range...",  43052
+}
+POPUP "&View"
+{
+	MENUITEM "Always on Top",  44034
+	MENUITEM "Toggle Full Screen Mode",  44032
+	MENUITEM "Post-It",  44009
+	MENUITEM SEPARATOR
+	POPUP "Show Symbol"
+	{
+		MENUITEM "Show White Space and TAB",  44025
+		MENUITEM "Show End of Line",  44026
+		MENUITEM "Show All Characters",  44019
+		MENUITEM SEPARATOR
+		MENUITEM "Show Indent Guide",  44020
+		MENUITEM "Show Wrap Symbol",  44041
+	}
+	POPUP "Zoom"
+	{
+		MENUITEM "Zoom &In (Ctrl+Mouse Wheel Up)",  44023
+		MENUITEM "Zoom &Out (Ctrl+Mouse Wheel Down)",  44024
+		MENUITEM "Restore Default Zoom",  44033
+	}
+	POPUP "Move/Clone Current Document"
+	{
+		MENUITEM "Move to Other View",  10001
+		MENUITEM "Clone to Other View",  10002
+		MENUITEM "Move to New Instance",  10003
+		MENUITEM "Open in New Instance",  10004
+	}
+	MENUITEM "Word wrap",  44022
+	MENUITEM "Focus on Another View",  44072
+	MENUITEM "Hide Lines",  44042
+	MENUITEM "User-Defined Dialogue...",  44011
+	MENUITEM SEPARATOR
+	MENUITEM "Fold All",  44010
+	MENUITEM "Unfold All",  44029
+	MENUITEM "Collapse Current Level",  44030
+	MENUITEM "Uncollapse Current Level",  44031
+	POPUP "Collapse Level"
+	{
+		MENUITEM "1",  44051
+		MENUITEM "2",  44052
+		MENUITEM "3",  44053
+		MENUITEM "4",  44054
+		MENUITEM "5",  44055
+		MENUITEM "6",  44056
+		MENUITEM "7",  44057
+		MENUITEM "8",  44058
+	}
+	POPUP "Uncollapse Level"
+	{
+		MENUITEM "1",  44061
+		MENUITEM "2",  44062
+		MENUITEM "3",  44063
+		MENUITEM "4",  44064
+		MENUITEM "5",  44065
+		MENUITEM "6",  44066
+		MENUITEM "7",  44067
+		MENUITEM "8",  44068
+	}
+	MENUITEM SEPARATOR
+	MENUITEM "Summary...",  44049
+	MENUITEM SEPARATOR
+	MENUITEM SEPARATOR
+	MENUITEM "Synchronize Vertical Scrolling",  44035
+	MENUITEM "Synchronize Horizontal Scrolling",  44036
+	MENUITEM SEPARATOR
+}
+POPUP "&Language"
+{
+	MENUITEM "Ada",  46042
+	MENUITEM "ASP",  46009
+	MENUITEM "Assembly",  46033
+	MENUITEM "AutoIt",  46044
+	MENUITEM "Batch",  46022
+	MENUITEM "C",  46002
+	MENUITEM "C#",  46023
+	MENUITEM "C++",  46003
+	MENUITEM "Caml",  46040
+	MENUITEM "Cmake",  46048
+	MENUITEM "COBOL",  46050
+	MENUITEM "CSS",  46010
+	MENUITEM "D",  46051
+	MENUITEM "Diff",  46034
+	MENUITEM "Flash actionscript",  46028
+	MENUITEM "Fortran",  46026
+	MENUITEM "Gui4Cli",  46052
+	MENUITEM "Haskell",  46046
+	MENUITEM "HTML",  46005
+	MENUITEM "INNO",  46047
+	MENUITEM "Java",  46004
+	MENUITEM "Javascript",  46007
+	MENUITEM "JSP",  46055
+	MENUITEM "KIXtart",  46041
+	MENUITEM "LISP",  46031
+	MENUITEM "Lua",  46024
+	MENUITEM "Makefile",  46018
+	MENUITEM "Matlab",  46045
+	MENUITEM "MS INI file",  46019
+	MENUITEM "MS-DOS Style",  46015
+	MENUITEM "Normal Text",  46016
+	MENUITEM "NSIS",  46029
+	MENUITEM "Objective-C",  46014
+	MENUITEM "Pascal",  46011
+	MENUITEM "Perl",  46013
+	MENUITEM "PHP",  46008
+	MENUITEM "Postscript",  46036
+	MENUITEM "PowerShell",  46053
+	MENUITEM "Properties",  46035
+	MENUITEM "Python",  46012
+	MENUITEM "R",  46054
+	MENUITEM "Resource file",  46017
+	MENUITEM "Ruby",  46037
+	MENUITEM "Shell",  46027
+	MENUITEM "Scheme",  46032
+	MENUITEM "Smalltalk",  46038
+	MENUITEM "SQL",  46020
+	MENUITEM "TCL",  46030
+	MENUITEM "TeX",  46025
+	MENUITEM "VB",  46021
+	MENUITEM "VHDL",  46039
+	MENUITEM "Verilog",  46043
+	MENUITEM "XML",  46006
+	MENUITEM "YAML",  46049
+	MENUITEM SEPARATOR
+	MENUITEM "User-Defined",  46080
+}
+POPUP "&Language"
+{
+	POPUP "A"
+	{
+		MENUITEM "Ada",  46042
+		MENUITEM "ASP",  46009
+		MENUITEM "Assembly",  46033
+		MENUITEM "AutoIt",  46044
+	}
+	MENUITEM "Batch",  46022
+	POPUP "C"
+	{
+		MENUITEM "C",  46002
+		MENUITEM "C#",  46023
+		MENUITEM "C++",  46003
+		MENUITEM "Caml",  46040
+		MENUITEM "Cmake",  46048
+		MENUITEM "COBOL",  46050
+		MENUITEM "CSS",  46010
+	}
+	POPUP "D"
+	{
+		MENUITEM "D",  46051
+		MENUITEM "Diff",  46034
+	}
+	POPUP "F"
+	{
+		MENUITEM "Flash actionscript",  46028
+		MENUITEM "Fortran",  46026
+	}
+	MENUITEM "Gui4Cli",  46052
+	POPUP "H"
+	{
+		MENUITEM "Haskell",  46046
+		MENUITEM "HTML",  46005
+	}
+	MENUITEM "INNO",  46047
+	POPUP "J"
+	{
+		MENUITEM "Java",  46004
+		MENUITEM "Javascript",  46007
+		MENUITEM "JSP",  46055
+	}
+	MENUITEM "KIXtart",  46041
+	POPUP "L"
+	{
+		MENUITEM "LISP",  46031
+		MENUITEM "Lua",  46024
+	}
+	POPUP "M"
+	{
+		MENUITEM "Makefile",  46018
+		MENUITEM "Matlab",  46045
+		MENUITEM "MS INI file",  46019
+		MENUITEM "MS-DOS Style",  46015
+	}
+	POPUP "N"
+	{
+		MENUITEM "Normal Text",  46016
+		MENUITEM "NSIS",  46029
+	}
+	MENUITEM "Objective-C",  46014
+	POPUP "P"
+	{
+		MENUITEM "Pascal",  46011
+		MENUITEM "Perl",  46013
+		MENUITEM "PHP",  46008
+		MENUITEM "Postscript",  46036
+		MENUITEM "PowerShell",  46053
+		MENUITEM "Properties",  46035
+		MENUITEM "Python",  46012
+	}
+	POPUP "R"
+	{
+		MENUITEM "R",  46054
+		MENUITEM "Resource file",  46017
+		MENUITEM "Ruby",  46037
+	}
+	POPUP "S"
+	{
+		MENUITEM "Shell",  46027
+		MENUITEM "Scheme",  46032
+		MENUITEM "Smalltalk",  46038
+		MENUITEM "SQL",  46020
+	}
+	POPUP "T"
+	{
+		MENUITEM "TCL",  46030
+		MENUITEM "TeX",  46025
+	}
+	POPUP "V"
+	{
+		MENUITEM "VB",  46021
+		MENUITEM "VHDL",  46039
+		MENUITEM "Verilog",  46043
+	}
+	MENUITEM "XML",  46006
+	MENUITEM "YAML",  46049
+	MENUITEM SEPARATOR
+	MENUITEM "User-Defined",  46080
+}
+POPUP "Se&ttings"
+{
+	MENUITEM "Preferences...",  48011
+	MENUITEM "Style Configurator...",  46001
+	MENUITEM "Shortcut Mapper...",  48009
+	MENUITEM SEPARATOR
+	POPUP "Import"
+	{
+		MENUITEM "Import plugin(s)...",  48005
+		MENUITEM "Import style theme(s)...",  48006
+	}
+	MENUITEM SEPARATOR
+	MENUITEM "Edit Popup ContextMenu",  48018
+}
+POPUP "Macro"
+{
+	MENUITEM "Start Re&cording",  42018
+	MENUITEM "S&top Recording",  42019
+	MENUITEM "&Playback",  42021
+	MENUITEM "&Save Current Recorded Macro...",  42025
+	MENUITEM "&Run a Macro Multiple Times...",  42032
+}
+POPUP "Run"
+{
+	MENUITEM "&Run...",  49000
+}
+POPUP "&?"
+{
+	MENUITEM "Help Contents",  47008
+	MENUITEM SEPARATOR
+	MENUITEM "Notepad++ Home",  47001
+	MENUITEM "Notepad++ Project Page",  47002
+	MENUITEM "Online Documentation",  47003
+	MENUITEM "Forum",  47004
+	MENUITEM "Get More Plugins",  47005
+	MENUITEM SEPARATOR
+	MENUITEM "Update Notepad++",  47006
+	MENUITEM "About Notepad++",  47000
+}
+POPUP "Project"
+{
+	MENUITEM "Project Panel 1",  44081
+	MENUITEM "Project Panel 2",  44082
+	MENUITEM "Project Panel 3",  44083
+}
+MENUITEM "¶",  44025
+MENUITEM "P",  44081
+}
