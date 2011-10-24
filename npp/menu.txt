@@ -1,7 +1,7 @@
 1500 MENU
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-POPUP "&File"
+POPUP "File"
 {
 	MENUITEM "&New",  41001
 	MENUITEM "&Open...",  41002
@@ -24,7 +24,7 @@ POPUP "&File"
 	MENUITEM SEPARATOR
 	MENUITEM "E&xit",  41011
 }
-POPUP "&Edit"
+POPUP "Edit"
 {
 	MENUITEM "Trim Trailing Space",  42024
 	MENUITEM "TAB to Space",  42046
@@ -224,23 +224,30 @@ POPUP "&Edit"
 	MENUITEM "Character Panel",  42051
 	MENUITEM "Clipboard History",  42052
 }
-POPUP "&Search"
+POPUP "Search"
 {
-	MENUITEM "&Find...",  43001
-	MENUITEM "Find in Files...",  43013
-	MENUITEM "Find &Next",  43002
-	MENUITEM "Find &Previous",  43010
-	MENUITEM "Select and Find Next",  43048
-	MENUITEM "Select and Find Previous",  43049
-	MENUITEM "Find (Volatile) Next",  43014
-	MENUITEM "Find (Volatile) Previous",  43015
-	MENUITEM "&Replace...",  43003
-	MENUITEM "&Incremental Search",  43011
-	MENUITEM "Search Results Window",  43045
-	MENUITEM "Next Search Result",  43046
-	MENUITEM "Previous Search Result",  43047
-	MENUITEM "&Go to...",  43004
-	MENUITEM "Go to Matching Brace",  43009
+	MENUITEM "Using 1st Style",  43022
+	MENUITEM "Clear 1st Style",  43023
+	MENUITEM "1st Style",  43033
+	MENUITEM "1st Style",  43039
+	POPUP "stuff"
+	{
+		MENUITEM "&Find...",  43001
+		MENUITEM "Find in Files...",  43013
+		MENUITEM "Find &Next",  43002
+		MENUITEM "Find &Previous",  43010
+		MENUITEM "Select and Find Next",  43048
+		MENUITEM "Select and Find Previous",  43049
+		MENUITEM "Find (Volatile) Next",  43014
+		MENUITEM "Find (Volatile) Previous",  43015
+		MENUITEM "&Replace...",  43003
+		MENUITEM "&Incremental Search",  43011
+		MENUITEM "Search Results Window",  43045
+		MENUITEM "Next Search Result",  43046
+		MENUITEM "Previous Search Result",  43047
+		MENUITEM "&Go to...",  43004
+		MENUITEM "Go to Matching Brace",  43009
+	}
 	MENUITEM SEPARATOR
 	POPUP "Mark All"
 	{
@@ -294,7 +301,7 @@ POPUP "&Search"
 	MENUITEM SEPARATOR
 	MENUITEM "Find characters in range...",  43052
 }
-POPUP "&View"
+POPUP "View"
 {
 	MENUITEM "Always on Top",  44034
 	MENUITEM "Toggle Full Screen Mode",  44032
@@ -361,167 +368,70 @@ POPUP "&View"
 	MENUITEM "Synchronize Horizontal Scrolling",  44036
 	MENUITEM SEPARATOR
 }
-POPUP "&Language"
+POPUP "Lang"
 {
-	MENUITEM "Ada",  46042
-	MENUITEM "ASP",  46009
-	MENUITEM "Assembly",  46033
 	MENUITEM "AutoIt",  46044
 	MENUITEM "Batch",  46022
-	MENUITEM "C",  46002
-	MENUITEM "C#",  46023
 	MENUITEM "C++",  46003
-	MENUITEM "Caml",  46040
-	MENUITEM "Cmake",  46048
-	MENUITEM "COBOL",  46050
 	MENUITEM "CSS",  46010
-	MENUITEM "D",  46051
 	MENUITEM "Diff",  46034
-	MENUITEM "Flash actionscript",  46028
-	MENUITEM "Fortran",  46026
-	MENUITEM "Gui4Cli",  46052
-	MENUITEM "Haskell",  46046
 	MENUITEM "HTML",  46005
-	MENUITEM "INNO",  46047
-	MENUITEM "Java",  46004
 	MENUITEM "Javascript",  46007
-	MENUITEM "JSP",  46055
-	MENUITEM "KIXtart",  46041
 	MENUITEM "LISP",  46031
-	MENUITEM "Lua",  46024
-	MENUITEM "Makefile",  46018
-	MENUITEM "Matlab",  46045
 	MENUITEM "MS INI file",  46019
-	MENUITEM "MS-DOS Style",  46015
 	MENUITEM "Normal Text",  46016
-	MENUITEM "NSIS",  46029
-	MENUITEM "Objective-C",  46014
-	MENUITEM "Pascal",  46011
-	MENUITEM "Perl",  46013
-	MENUITEM "PHP",  46008
-	MENUITEM "Postscript",  46036
-	MENUITEM "PowerShell",  46053
-	MENUITEM "Properties",  46035
 	MENUITEM "Python",  46012
-	MENUITEM "R",  46054
-	MENUITEM "Resource file",  46017
-	MENUITEM "Ruby",  46037
-	MENUITEM "Shell",  46027
-	MENUITEM "Scheme",  46032
-	MENUITEM "Smalltalk",  46038
-	MENUITEM "SQL",  46020
-	MENUITEM "TCL",  46030
-	MENUITEM "TeX",  46025
-	MENUITEM "VB",  46021
-	MENUITEM "VHDL",  46039
-	MENUITEM "Verilog",  46043
 	MENUITEM "XML",  46006
-	MENUITEM "YAML",  46049
 	MENUITEM SEPARATOR
-	MENUITEM "User-Defined",  46080
-}
-POPUP "&Language"
-{
-	POPUP "A"
+	POPUP "more"
 	{
 		MENUITEM "Ada",  46042
 		MENUITEM "ASP",  46009
 		MENUITEM "Assembly",  46033
-		MENUITEM "AutoIt",  46044
-	}
-	MENUITEM "Batch",  46022
-	POPUP "C"
-	{
 		MENUITEM "C",  46002
 		MENUITEM "C#",  46023
-		MENUITEM "C++",  46003
 		MENUITEM "Caml",  46040
 		MENUITEM "Cmake",  46048
 		MENUITEM "COBOL",  46050
-		MENUITEM "CSS",  46010
-	}
-	POPUP "D"
-	{
 		MENUITEM "D",  46051
-		MENUITEM "Diff",  46034
-	}
-	POPUP "F"
-	{
 		MENUITEM "Flash actionscript",  46028
 		MENUITEM "Fortran",  46026
-	}
-	MENUITEM "Gui4Cli",  46052
-	POPUP "H"
-	{
+		MENUITEM "Gui4Cli",  46052
 		MENUITEM "Haskell",  46046
-		MENUITEM "HTML",  46005
-	}
-	MENUITEM "INNO",  46047
-	POPUP "J"
-	{
+		MENUITEM "INNO",  46047
 		MENUITEM "Java",  46004
-		MENUITEM "Javascript",  46007
 		MENUITEM "JSP",  46055
-	}
-	MENUITEM "KIXtart",  46041
-	POPUP "L"
-	{
-		MENUITEM "LISP",  46031
+		MENUITEM "KIXtart",  46041
 		MENUITEM "Lua",  46024
-	}
-	POPUP "M"
-	{
 		MENUITEM "Makefile",  46018
 		MENUITEM "Matlab",  46045
-		MENUITEM "MS INI file",  46019
 		MENUITEM "MS-DOS Style",  46015
-	}
-	POPUP "N"
-	{
-		MENUITEM "Normal Text",  46016
 		MENUITEM "NSIS",  46029
-	}
-	MENUITEM "Objective-C",  46014
-	POPUP "P"
-	{
+		MENUITEM "Objective-C",  46014
 		MENUITEM "Pascal",  46011
 		MENUITEM "Perl",  46013
 		MENUITEM "PHP",  46008
 		MENUITEM "Postscript",  46036
 		MENUITEM "PowerShell",  46053
 		MENUITEM "Properties",  46035
-		MENUITEM "Python",  46012
-	}
-	POPUP "R"
-	{
 		MENUITEM "R",  46054
 		MENUITEM "Resource file",  46017
 		MENUITEM "Ruby",  46037
-	}
-	POPUP "S"
-	{
 		MENUITEM "Shell",  46027
 		MENUITEM "Scheme",  46032
 		MENUITEM "Smalltalk",  46038
 		MENUITEM "SQL",  46020
-	}
-	POPUP "T"
-	{
 		MENUITEM "TCL",  46030
 		MENUITEM "TeX",  46025
-	}
-	POPUP "V"
-	{
 		MENUITEM "VB",  46021
 		MENUITEM "VHDL",  46039
 		MENUITEM "Verilog",  46043
+		MENUITEM "YAML",  46049
 	}
-	MENUITEM "XML",  46006
-	MENUITEM "YAML",  46049
 	MENUITEM SEPARATOR
 	MENUITEM "User-Defined",  46080
 }
-POPUP "Se&ttings"
+POPUP "Settings"
 {
 	MENUITEM "Preferences...",  48011
 	MENUITEM "Style Configurator...",  46001
@@ -547,7 +457,7 @@ POPUP "Run"
 {
 	MENUITEM "&Run...",  49000
 }
-POPUP "&?"
+POPUP "?"
 {
 	MENUITEM "Help Contents",  47008
 	MENUITEM SEPARATOR
