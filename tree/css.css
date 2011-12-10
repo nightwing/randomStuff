@@ -1,0 +1,23 @@
+.J-Zh-I {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: -moz-linear-gradient(center top , #F9F9F9, #E3E3E3) repeat scroll 0 0 transparent;
+    border-color: #CCCCCC #BBBBBB #A0A0A0;
+    border-left: 1px solid #BBBBBB;
+    border-radius: 3px 3px 3px 3px;
+    border-right: 1px solid #BBBBBB;
+    border-style: solid;
+    border-width: 1px;
+    color: #000000;
+    cursor: default;
+    font: 75% arial,sans-serif;
+    margin: 0 8px 0 0;
+    outline: medium none;
+    padding: 3px 8px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}

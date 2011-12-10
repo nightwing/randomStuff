@@ -1,0 +1,167 @@
+<canvas id="canvas"></canvas>
+<div onclick='cycle()'>
+	<div id="wq" class="w"></div>
+	<div id="bgColor" class="w"></div>
+	<div id="header_tile" class="w"></div>
+	<div id="header_bg" class="w"></div>
+	<div id="footer_tile" class="w"></div>
+	<div id="footer_bg" class="w" style=""></div>
+</div>
+
+<div class="nH" style="width: 1094px;"><div class="nH" style="position: relative;"><div class="nH GcwpPb-Z8OBDd"></div></div></div>
+
+<style>
+#canvas{
+	position: fixed;
+	bottom:0;
+	z-index:100
+}
+.w {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+#bgColor {
+    background: none repeat scroll 0 0 #CDE4F3;
+}
+
+#header_tile {
+    background: url("header_tile.jpg") repeat-x scroll 0 0 transparent;
+}
+
+#footer_tile {
+    background: url("footer_tile.jpg") repeat-x scroll left bottom transparent;
+}
+
+#footer_bg {
+    background: url("footer_bg.jpg") no-repeat scroll 156px bottom transparent;
+}
+
+#header_bg {
+    background: url("header_bg.jpg") no-repeat scroll 0 0 transparent;
+}
+
+*{margin: 0px}
+</style>
+
+
+<script>
+	$ = function(x){
+		return document.getElementById(x)
+	}
+	
+	f = ["10pm" , "10am"]
+	
+	mapNames = {
+		'10am': {header_tile: "header_tile.gif"},
+		'10pm': {header_tile: "headertile_bg.jpg", footer_tile: "footertile_bg.jpg", minHeight: 860}
+	}
+
+	getImagePath = function(x, folderName, simple){
+	
+		var map = mapNames[folderName] || {}		
+		var imgName = map[x] ? map[x]: x + ".jpg"
+		imgName = folderName + '/' + imgName
+		if(simple)
+			return imgName
+		return "url('" + imgName + "')"
+	},
+	
+	setName = function(name){
+		var map = mapNames[name] || {}
+		for each(var x in ["header_tile", "footer_tile", "footer_bg", "header_bg"]){
+			var st = $(x).style
+			st.backgroundImage = getImagePath(x, name)
+			
+			if(map.minHeight)
+				st.height = map.minHeight + 'px'
+			else
+				st.height = ''
+		}
+	}
+	
+	setBgColor = function(name){
+		var img = new Image();   // Create new img element
+		var ctx = document.getElementById('canvas').getContext('2d');
+		img.onload = function(){
+			// execute drawImage statements here
+			var h = img.height
+			ctx.drawImage(img, 0,h-1,1,1, 0,0,1,1);
+		  
+			var data = ctx.getImageData(0,0,1,1).data
+			$('bgColor').style.backgroundColor = 'rgb(' + [data[0],data[1],data[2]] +')'
+		  
+		  
+		};
+		img.src = getImagePath("header_tile", name, true)
+    
+	}
+	
+	var i = 0, folderName = ''
+	cycle = function(){
+		folderName = f[i]
+		setName(folderName)
+		setBgColor(folderName)
+		i++
+		if(i >= f.length)
+			i = 0
+	}
+	cycle()
+</script>
+<script >
+--**--**--
+
+ root = "https://mail.google.com/mail/images/2/5/teahouse"
+
+folders = ["6am"]
+files = [
+"canvastile_bg.jpg",
+"headertile_bg.gif",
+"footertile_bg.jpg",
+"header_bg.jpg",
+"footer_bg.jpg",
+"header_tile.jpg",
+"footer_tile.jpg"
+]
+
+function saveFile(nsIFile, uri){
+	var uriToFile =makeURI(uri)
+	var persist = Cc["@mozilla.org/embedding/browser/nsWebBrowserPersist;1"]
+	              .createInstance(Ci.nsIWebBrowserPersist);
+	 
+	// with persist flags if desired See nsIWebBrowserPersist page for more PERSIST_FLAGS.
+	const nsIWBP = Components.interfaces.nsIWebBrowserPersist;
+	const flags = nsIWBP.PERSIST_FLAGS_REPLACE_EXISTING_FILES;
+	persist.persistFlags = flags | nsIWBP.PERSIST_FLAGS_FROM_CACHE;
+	 
+	// do the save
+	persist.saveURI(uriToFile, null, null, null, "", nsIFile);
+}
+
+
+lf = getLocalFile(content.location.toString())
+
+folN = folders[0]
+lf =lf.parent
+lf.append(folN)
+
+
+for each(i in files){
+	f=lf.clone()
+	f.append(i)
+	uri = [root,folN,i].join('/')
+//open(uri )
+jn.say(f.path)
+	saveFile(f, uri)
+}
+
+
+
+
+
+
+
+
+
+</script>
